@@ -1,0 +1,91 @@
+name: Auto Update Changelog
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check Release Tag
+        id: check
+        run: |
+          TAG="${{ github.event.release.tag_name }}"
+          if [[ "$TAG" =~ ^homeio- ]]; then
+            echo "PROCEED=true" >> $GITHUB_OUTPUT
+            echo "TAG=$TAG" >> $GITHUB_OUTPUT
+            echo "DATE=$(TZ='Asia/Jakarta' date +'%d %B %Y')" >> $GITHUB_OUTPUT
+          else
+            echo "PROCEED=false" >> $GITHUB_OUTPUT
+            echo "Bukan rilis HOME.iO, skip."
+          fi
+
+      - name: Update Changelog in README
+        if: steps.check.outputs.PROCEED == 'true'
+        env:
+          TAG: ${{ steps.check.outputs.TAG }}
+          DATE: ${{ steps.check.outputs.DATE }}
+          BODY: ${{ github.event.release.body }}
+        run: |
+          python3 << 'PYEOF'
+          import os, re, sys
+          
+          tag = os.environ['TAG']
+          date = os.environ['DATE']
+          body = os.environ.get('BODY', '').strip() or '- Tidak ada rincian pembaruan.'
+          
+          # Bersihkan heading "Rincian Pembaruan" dari body agar tidak dobel
+          body = re.sub(r'^#+\s*Rincian Pembaruan\s*\n+', '', body, flags=re.MULTILINE).strip()
+          
+          version_clean = tag.replace('homeio-', '')
+          new_entry = f"### {version_clean} ({date})\n{body}"
+          
+          with open('README.md', 'r', encoding='utf-8') as f:
+              readme = f.read()
+          
+          pattern = r'(<!-- CHANGELOG_START -->)(.*?)(<!-- CHANGELOG_END -->)'
+          match = re.search(pattern, readme, re.DOTALL)
+          
+          if not match:
+              print("❌ Marker <!-- CHANGELOG_START --> & <!-- CHANGELOG_END --> tidak ditemukan di README.md")
+              sys.exit(1)
+          
+          old_content = match.group(2).strip()
+          
+          # Parse existing entries (pisah dengan '---')
+          existing_entries = []
+          if old_content:
+              existing_entries = [e.strip() for e in old_content.split('\n\n---\n\n') if e.strip()]
+          
+          # Prepend new entry, batasi maksimal 3 versi terakhir
+          all_entries = [new_entry] + existing_entries
+          combined = '\n\n---\n\n'.join(all_entries[:3])
+          
+          # Rebuild README
+          new_readme = readme[:match.start(2)] + f"\n{combined}\n" + readme[match.end(2):]
+          
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(new_readme)
+          
+          print(f"✅ Changelog berhasil diperbarui untuk versi {version_clean}")
+          PYEOF
+
+      - name: Commit and Push
+        if: steps.check.outputs.PROCEED == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "ℹ️ Tidak ada perubahan pada README."
+          else
+            git commit -m "docs: auto-update changelog for ${{ steps.check.outputs.TAG }}"
+            git push
+          fi
