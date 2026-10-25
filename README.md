@@ -233,9 +233,23 @@ Video 4K   : [READY TO FALLBACK]
 
 <div align="center">
   <h2 style="color: #38BDF8;">📊 Statistik Repositori</h2>
-  <br>
-  <img src="https://github-readme-stats.vercel.app/api?username=andikune-ux&show_icons=true&theme=dark&bg_color=0A0E1A&title_color=38BDF8&icon_color=38BDF8&text_color=ffffff&border_color=1E3A8A" alt="GitHub Stats" />
-  <br>
+  <p>Data khusus untuk repositori ini:</p>
+  
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/stargazers">
+    <img src="https://img.shields.io/github/stars/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Stars">
+  </a>
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/network/members">
+    <img src="https://img.shields.io/github/forks/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Forks">
+  </a>
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/issues">
+    <img src="https://img.shields.io/github/issues/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Issues">
+  </a>
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/commits/main">
+    <img src="https://img.shields.io/github/last-commit/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Last Commit">
+  </a>
+  
+  <br><br>
+  
   <img src="https://komarev.com/ghpvc/?username=andikune-ux&label=Total%20Pengunjung&color=38BDF8&style=flat-square" alt="Visitor Counter" />
 </div>
 
