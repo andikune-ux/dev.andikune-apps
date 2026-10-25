@@ -26,7 +26,7 @@
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <div align="center">
-  <h2>📟 Live System Dashboard</h2>
+  <h2 style="color: #38BDF8;">📟 Live System Dashboard</h2>
   <p><i>Status sistem HOME.iO saat ini (Simulasi)</i></p>
 </div>
 
@@ -47,22 +47,10 @@ Video 4K   : [READY TO FALLBACK]
 
 <br><br>
 
-<!-- TOMBOL DOWNLOAD NEON FOCUS (UKURAN JUMBO) -->
-<style>
-@keyframes neonPulse {
-  0% { box-shadow: 0 0 15px rgba(56, 189, 248, 0.6), 0 0 30px rgba(56, 189, 248, 0.2); transform: scale(1); }
-  50% { box-shadow: 0 0 30px rgba(56, 189, 248, 1), 0 0 60px rgba(56, 189, 248, 0.6); transform: scale(1.05); }
-  100% { box-shadow: 0 0 15px rgba(56, 189, 248, 0.6), 0 0 30px rgba(56, 189, 248, 0.2); transform: scale(1); }
-}
-</style>
-
+<!-- TOMBOL DOWNLOAD JUMBO (UKURAN BESAR & NEON) -->
 <div align="center">
-  <a href="https://github.com/andikune-ux/dev.andikune-apps/releases?q=homeio-&expanded=true" target="_blank" style="text-decoration: none;">
-    <div style="background-color: #0A0E1A; border: 3px solid #38BDF8; border-radius: 50px; padding: 20px 60px; display: inline-block; animation: neonPulse 2s infinite; cursor: pointer;">
-      <span style="color: #38BDF8; font-size: 28px; font-weight: 900; font-family: 'Outfit', sans-serif; letter-spacing: 3px; text-transform: uppercase; text-shadow: 0 0 15px rgba(56, 189, 248, 0.8);">
-        ⬇️ DOWNLOAD APK
-      </span>
-    </div>
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/releases?q=homeio-&expanded=true" target="_blank">
+    <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_HOME.iO_TV_APK-0A0E1A?style=for-the-badge&logo=android&logoColor=38BDF8&labelColor=0A0E1A" width="500" height="60" alt="Download APK">
   </a>
 </div>
 
@@ -71,42 +59,42 @@ Video 4K   : [READY TO FALLBACK]
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=400&lines=✨+Fitur+Utama+✨" id="fitur" alt="Fitur" />
+  <h2 style="color: #38BDF8;">✨ Fitur Utama ✨</h2>
 </div>
 
 <table align="center" width="100%" style="border-collapse: collapse; border: none;">
   <tr>
-    <!-- Kotak Kaca 1 -->
-    <td align="center" width="33%" style="border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 20px; background: linear-gradient(145deg, rgba(15,52,96,0.2), rgba(10,14,26,0.8));">
-      <h3 style="color: #38BDF8;">🧊 Liquid Glass UI</h3>
-      <p>Desain antarmuka futuristik menyerupai iOS. Dilengkapi <i>Solid Fallback</i> otomatis untuk TV dengan RAM kecil agar tetap responsif.</p>
+    <!-- Kotak 1 -->
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+      <h3 style="color: #38BDF8; margin-top: 10px;">🧊 Liquid Glass UI</h3>
+      <p style="color: #cccccc;">Desain antarmuka futuristik menyerupai iOS. Dilengkapi <i>Solid Fallback</i> otomatis untuk TV dengan RAM kecil agar tetap responsif.</p>
     </td>
-    <!-- Kotak Kaca 2 -->
-    <td align="center" width="33%" style="border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 20px; background: linear-gradient(145deg, rgba(15,52,96,0.2), rgba(10,14,26,0.8));">
-      <h3 style="color: #38BDF8;">🎮 D-Pad Presisi</h3>
-      <p>Sistem navigasi <i>Center-Locked Carousel</i> yang dirancang khusus agar remote tidak pernah <i>stuck</i> atau lompat-lompat.</p>
+    <!-- Kotak 2 -->
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+      <h3 style="color: #38BDF8; margin-top: 10px;">🎮 D-Pad Presisi</h3>
+      <p style="color: #cccccc;">Sistem navigasi <i>Center-Locked Carousel</i> yang dirancang khusus agar remote tidak pernah <i>stuck</i> atau lompat-lompat.</p>
     </td>
-    <!-- Kotak Kaca 3 -->
-    <td align="center" width="33%" style="border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 20px; background: linear-gradient(145deg, rgba(15,52,96,0.2), rgba(10,14,26,0.8));">
-      <h3 style="color: #38BDF8;">🔄 Auto-OTA Update</h3>
-      <p>Pembaruan aplikasi otomatis langsung dari GitHub. Tanpa perlu repot mencari file APK baru secara manual.</p>
+    <!-- Kotak 3 -->
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+      <h3 style="color: #38BDF8; margin-top: 10px;">🔄 Auto-OTA Update</h3>
+      <p style="color: #cccccc;">Pembaruan aplikasi otomatis langsung dari GitHub. Tanpa perlu repot mencari file APK baru secara manual.</p>
     </td>
   </tr>
   <tr>
-    <!-- Kotak Kaca 4 -->
-    <td align="center" width="33%" style="border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 20px; background: linear-gradient(145deg, rgba(15,52,96,0.2), rgba(10,14,26,0.8));">
-      <h3 style="color: #38BDF8;">🖼️ Multi-Wallpaper</h3>
-      <p>Video Sinematik 4K/HD (Auto-Fallback), Foto Estetik, Mode OLED, dan wallpaper kustom dari USB.</p>
+    <!-- Kotak 4 -->
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+      <h3 style="color: #38BDF8; margin-top: 10px;">🖼️ Multi-Wallpaper</h3>
+      <p style="color: #cccccc;">Video Sinematik 4K/HD (Auto-Fallback), Foto Estetik, Mode OLED, dan wallpaper kustom dari USB.</p>
     </td>
-    <!-- Kotak Kaca 5 -->
-    <td align="center" width="33%" style="border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 20px; background: linear-gradient(145deg, rgba(15,52,96,0.2), rgba(10,14,26,0.8));">
-      <h3 style="color: #38BDF8;">📺 System Control</h3>
-      <p>Atur WiFi, Bluetooth, Volume, Kecerahan, hingga pembersihan RAM (Booster) langsung dari <i>remote</i>.</p>
+    <!-- Kotak 5 -->
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+      <h3 style="color: #38BDF8; margin-top: 10px;">📺 System Control</h3>
+      <p style="color: #cccccc;">Atur WiFi, Bluetooth, Volume, Kecerahan, hingga pembersihan RAM (Booster) langsung dari <i>remote</i>.</p>
     </td>
-    <!-- Kotak Kaca 6 -->
-    <td align="center" width="33%" style="border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 12px; padding: 20px; background: linear-gradient(145deg, rgba(15,52,96,0.2), rgba(10,14,26,0.8));">
-      <h3 style="color: #38BDF8;">🔒 Kiosk Mode</h3>
-      <p>Kunci aplikasi agar pengguna tidak bisa keluar. Sangat cocok untuk TV Masjid, Hotel, atau Ruang Tunggu.</p>
+    <!-- Kotak 6 -->
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+      <h3 style="color: #38BDF8; margin-top: 10px;">🔒 Kiosk Mode</h3>
+      <p style="color: #cccccc;">Kunci aplikasi agar pengguna tidak bisa keluar. Sangat cocok untuk TV Masjid, Hotel, atau Ruang Tunggu.</p>
     </td>
   </tr>
 </table>
@@ -117,7 +105,7 @@ Video 4K   : [READY TO FALLBACK]
 <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%">
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=400&lines=⚙️+Spesifikasi+Sistem+⚙️" id="spesifikasi" alt="Spesifikasi" />
+  <h2 style="color: #38BDF8;">⚙️ Spesifikasi Sistem ⚙️</h2>
 </div>
 
 | Komponen | Spesifikasi Minimal | Rekomendasi |
@@ -131,7 +119,7 @@ Video 4K   : [READY TO FALLBACK]
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=🚀+Panduan+Instalasi+🚀" id="instalasi" alt="Instalasi" />
+  <h2 style="color: #38BDF8;">🚀 Panduan Instalasi 🚀</h2>
 </div>
 
 1. Klik tombol **⬇️ DOWNLOAD HOME.iO TV APK** di bagian atas.
@@ -149,7 +137,7 @@ Video 4K   : [READY TO FALLBACK]
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=🗺️+Roadmap+Pengembangan+🗺️" alt="Roadmap" />
+  <h2 style="color: #38BDF8;">🗺️ Roadmap Pengembangan 🗺️</h2>
 </div>
 
 - [x] **Liquid Glass UI** (Solid Fallback)
@@ -162,7 +150,7 @@ Video 4K   : [READY TO FALLBACK]
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=400&lines=❓+FAQ+❓" id="faq" alt="FAQ" />
+  <h2 style="color: #38BDF8;">❓ FAQ ❓</h2>
 </div>
 
 <details>
@@ -194,8 +182,8 @@ Video 4K   : [READY TO FALLBACK]
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=📊+Statistik+Repositori+📊" alt="Statistik" />
-  <br><br>
+  <h2 style="color: #38BDF8;">📊 Statistik Repositori 📊</h2>
+  <br>
   <img src="https://github-readme-stats.vercel.app/api?username=andikune-ux&show_icons=true&theme=dark&bg_color=0A0E1A&title_color=38BDF8&icon_color=38BDF8&text_color=ffffff&border_color=1E3A8A" alt="GitHub Stats" />
   <br>
   <img src="https://komarev.com/ghpvc/?username=andikune-ux&label=Total%20Pengunjung&color=38BDF8&style=flat-square" alt="Visitor Counter" />
