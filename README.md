@@ -225,7 +225,7 @@
 <!-- Garis Pembatas -->
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-<!-- SECTION: STATISTIK REPO (KARTU REPO VALID) -->
+<!-- SECTION: STATISTIK REPO (KARTU REPO VALID & RAPI) -->
 <div align="center">
   <br>
   <h2 style="color: #38BDF8;">📊 Statistik Repositori</h2>
@@ -238,18 +238,28 @@
 
   <br><br>
   
-  <!-- Lencana Real-time Spesifik Repo -->
-  <a href="https://github.com/andikune-ux/dev.andikune-apps/stargazers">
-    <img src="https://img.shields.io/github/stars/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Stars">
-  </a>
-  <a href="https://github.com/andikune-ux/dev.andikune-apps/network/members">
-    <img src="https://img.shields.io/github/forks/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Forks">
-  </a>
-  <a href="https://github.com/andikune-ux/dev.andikune-apps/issues">
-    <img src="https://img.shields.io/github/issues/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Issues">
-  </a>
+  <!-- Lencana Real-time Spesifik Repo (Pakai Tabel Biar Rapi di HP) -->
+  <table align="center" style="border: none; background-color: transparent;">
+    <tr>
+      <td align="center" style="padding: 5px;">
+        <a href="https://github.com/andikune-ux/dev.andikune-apps/stargazers">
+          <img src="https://img.shields.io/github/stars/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Stars">
+        </a>
+      </td>
+      <td align="center" style="padding: 5px;">
+        <a href="https://github.com/andikune-ux/dev.andikune-apps/network/members">
+          <img src="https://img.shields.io/github/forks/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Forks">
+        </a>
+      </td>
+      <td align="center" style="padding: 5px;">
+        <a href="https://github.com/andikune-ux/dev.andikune-apps/issues">
+          <img src="https://img.shields.io/github/issues/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Issues">
+        </a>
+      </td>
+    </tr>
+  </table>
   
-  <br><br>
+  <br>
   
   <img src="https://komarev.com/ghpvc/?username=andikune-ux&label=Total%20Pengunjung&color=38BDF8&style=flat-square" alt="Visitor Counter" />
 </div>
