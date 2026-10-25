@@ -3,14 +3,10 @@
 <!-- Animasi Gelombang Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0E1A,50:111827,100:1E3A8A&height=220&section=header&text=HOME.iO%20TV&fontSize=80&fontAlign=50&fontAlignY=40&animation=twinkling&fontColor=38BDF8&desc=The%20Future%20of%20Android%20TV%20Launcher&descAlign=50&descAlignY=60" width="100%" />
 
-<br>
+<!-- Animasi Teks Berjalan -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=🔥+UPDATE+TERBARU+v1.25.348+TELAH+HADIR!;⚡+Perbaikan+D-Pad+Anti-Lag+%26+Auto-Fallback+Video;🚀+Unduh+sekarang+di+bagian+Releases!" alt="News Ticker" />
 
-<!-- Teks Berjalan (Marquee/News Ticker) -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&lines=🔥+UPDATE+TERBARU+v1.25.348+TELAH+HADIR!;⚡+Perbaikan+D-Pad+Anti-Lag+%26+Auto-Fallback+Video;🚀+Unduh+sekarang+di+bagian+Releases!" alt="News Ticker" />
-</p>
-
-<br>
+<br><br>
 
 <!-- Tombol Remote Navigasi -->
 <a href="#fitur"><img src="https://img.shields.io/badge/-[ FITUR ]-1A1A2E?style=for-the-badge&logo=github&logoColor=38BDF8"></a>
@@ -20,157 +16,148 @@
 
 </div>
 
----
+<br>
 
-<div align="center">
-  <h2 style="color: #38BDF8;">💡 Kenapa Harus HOME.iO TV?</h2>
-  <p><b>Bukan sekadar launcher biasa. Ini adalah pengalaman menonton kelas atas.</b></p>
-</div>
-
-Kebanyakan TV Box/STB memiliki antarmuka yang kaku dan membosankan. **HOME.iO TV** hadir untuk merevolusi cara kamu berinteraksi dengan TV. Dengan perpaduan **UI Liquid Glass**, navigasi **D-Pad** yang presisi, dan optimasi performa tingkat lanjut, HOME.iO TV mengubah TV biasa menjadi *Smart TV* masa depan.
-
----
-
-<!-- Garis Beranimasi -->
+<!-- Garis Pembatas -->
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
+<!-- SECTION: KENAPA HARUS HOME.IO -->
 <div align="center">
-  <h2 style="color: #38BDF8;">📸 Galeri Tampilan</h2>
-  <p><i>(Screenshot asli aplikasi akan segera hadir di sini)</i></p>
+  <br>
+  <h2 style="color: #38BDF8;">💡 Kenapa Harus HOME.iO TV?</h2>
+  <p><b>Bukan sekadar launcher biasa. Ini adalah pengalaman menonton kelas atas.</b></p>
+  <br>
+  <p align="justify">Kebanyakan TV Box/STB memiliki antarmuka yang kaku dan membosankan. <b>HOME.iO TV</b> hadir untuk merevolusi cara kamu berinteraksi dengan TV. Dengan perpaduan <b>UI Liquid Glass</b>, navigasi <b>D-Pad</b> yang presisi, dan optimasi performa tingkat lanjut, HOME.iO TV mengubah TV biasa menjadi <i>Smart TV</i> masa depan.</p>
 </div>
 
 <br>
 
 <div align="center">
-  <h2 style="color: #38BDF8;">📟 Live System Dashboard</h2>
-  <p><i>Status sistem HOME.iO saat ini (Simulasi)</i></p>
+  <h2 style="color: #38BDF8;">📸 Galeri Tampilan</h2>
+  <p><i>(Screenshot asli aplikasi akan segera hadir di sini)</i></p>
+  
+  <!-- NANTI KAMU TINGGAL TIMPA LINK DI BAWAH INI KALAU GAMBAR SUDAH DI-UPLOAD -->
+  <!-- <img src="https://raw.githubusercontent.com/andikune-ux/dev.andikune-apps/main/assets/1.jpg" width="300" style="border-radius: 10px; margin: 5px;"> -->
 </div>
 
-```text
-[ SYSTEM BOOT SEQUENCE ]
-=========================================
-[OK] Loading Core Kernel...
-[OK] Initializing Liquid Glass UI...
-[OK] Mounting Network Modules...
------------------------------------------
-RAM Status : [████████░░] 80% (Optimized)
-Kiosk Mode : [OFF]
-OTA Server : [ONLINE]
-Video 4K   : [READY TO FALLBACK]
------------------------------------------
-> Awaiting remote input_
-```
+<br>
 
-<br><br>
+<!-- Garis Pembatas -->
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%">
 
-<!-- TOMBOL DOWNLOAD JUMBO -->
+<!-- SECTION: FITUR UTAMA -->
 <div align="center">
-  <a href="https://github.com/andikune-ux/dev.andikune-apps/releases?q=homeio-&expanded=true" target="_blank">
-    <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_HOME.iO_TV_APK-0A0E1A?style=for-the-badge&logo=android&logoColor=38BDF8&labelColor=0A0E1A" width="500" height="60" alt="Download APK">
-  </a>
-</div>
-
-<br><br>
-
----
-
-<div align="center">
+  <br>
   <h2 style="color: #38BDF8;">✨ Fitur Utama ✨</h2>
 </div>
 
-<table align="center" width="100%" style="border-collapse: collapse; border: none;">
+<table align="center" width="100%" style="border-collapse: collapse; border: none; margin-bottom: 20px;">
   <tr>
-    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A; vertical-align: top;">
       <h3 style="color: #38BDF8; margin-top: 10px;">🧊 Liquid Glass UI</h3>
-      <p style="color: #cccccc;">Desain antarmuka futuristik menyerupai iOS. Dilengkapi <i>Solid Fallback</i> otomatis untuk TV dengan RAM kecil.</p>
+      <p style="color: #cccccc; font-size: 13px;">Desain antarmuka futuristik menyerupai iOS. Dilengkapi <i>Solid Fallback</i> otomatis untuk TV dengan RAM kecil.</p>
     </td>
-    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A; vertical-align: top;">
       <h3 style="color: #38BDF8; margin-top: 10px;">🎮 D-Pad Presisi</h3>
-      <p style="color: #cccccc;">Sistem navigasi <i>Center-Locked Carousel</i> yang dirancang khusus agar remote tidak pernah <i>stuck</i> atau lompat-lompat.</p>
+      <p style="color: #cccccc; font-size: 13px;">Sistem navigasi <i>Center-Locked Carousel</i> yang dirancang khusus agar remote tidak pernah <i>stuck</i> atau lompat-lompat.</p>
     </td>
-    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A; vertical-align: top;">
       <h3 style="color: #38BDF8; margin-top: 10px;">🔄 Auto-OTA Update</h3>
-      <p style="color: #cccccc;">Pembaruan aplikasi otomatis langsung dari GitHub. Tanpa perlu repot mencari file APK baru secara manual.</p>
+      <p style="color: #cccccc; font-size: 13px;">Pembaruan aplikasi otomatis langsung dari GitHub. Tanpa perlu repot mencari file APK baru secara manual.</p>
     </td>
   </tr>
   <tr>
-    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A; vertical-align: top;">
       <h3 style="color: #38BDF8; margin-top: 10px;">🖼️ Multi-Wallpaper</h3>
-      <p style="color: #cccccc;">Video Sinematik 4K/HD (Auto-Fallback), Foto Estetik, Mode OLED, dan wallpaper kustom dari USB.</p>
+      <p style="color: #cccccc; font-size: 13px;">Video Sinematik 4K/HD (Auto-Fallback), Foto Estetik, Mode OLED, dan wallpaper kustom dari USB.</p>
     </td>
-    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A; vertical-align: top;">
       <h3 style="color: #38BDF8; margin-top: 10px;">📺 System Control</h3>
-      <p style="color: #cccccc;">Atur WiFi, Bluetooth, Volume, Kecerahan, hingga pembersihan RAM (Booster) langsung dari <i>remote</i>.</p>
+      <p style="color: #cccccc; font-size: 13px;">Atur WiFi, Bluetooth, Volume, Kecerahan, hingga pembersihan RAM (Booster) langsung dari <i>remote</i>.</p>
     </td>
-    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A;">
+    <td align="center" width="33%" style="border: 2px solid #38BDF8; border-radius: 10px; padding: 15px; background-color: #0A0E1A; vertical-align: top;">
       <h3 style="color: #38BDF8; margin-top: 10px;">🔒 Kiosk Mode</h3>
-      <p style="color: #cccccc;">Kunci aplikasi agar pengguna tidak bisa keluar. Sangat cocok untuk TV Masjid, Hotel, atau Ruang Tunggu.</p>
+      <p style="color: #cccccc; font-size: 13px;">Kunci aplikasi agar pengguna tidak bisa keluar. Sangat cocok untuk TV Masjid, Hotel, atau Ruang Tunggu.</p>
     </td>
   </tr>
 </table>
 
----
+<br>
 
-<!-- Garis Beranimasi -->
+<!-- Garis Pembatas -->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+<!-- SECTION: DOWNLOAD (DITARUH DI TENGAH) -->
+<div align="center">
+  <br>
+  <h2 style="color: #38BDF8;">📥 Unduh Aplikasi</h2>
+  <p>Dapatkan pengalaman <i>Smart TV</i> masa depan sekarang.</p>
+  
+  <br>
+  
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/releases?q=homeio-&expanded=true" target="_blank">
+    <img src="https://img.shields.io/badge/⬇️_DOWNLOAD_HOME.iO_TV_APK-0A0E1A?style=for-the-badge&logo=android&logoColor=38BDF8&labelColor=0A0E1A" width="500" height="60" alt="Download APK">
+  </a>
+  
+  <br><br>
+  
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/andikune-ux/dev.andikune-apps/releases/latest" width="120" style="border-radius: 10px; border: 2px solid #38BDF8;" />
+  <p><i>Scan QR Code dari HP untuk mengunduh</i></p>
+</div>
+
+<br>
+
+<!-- Garis Pembatas -->
 <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%">
 
+<!-- SECTION: SPESIFIKASI & PERANGKAT -->
 <div align="center">
-  <h2 style="color: #38BDF8;">🛠️ Tech Stack</h2>
-  <p>Aplikasi ini dibangun dengan teknologi modern Android:</p>
-  
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
-  <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
-  <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+  <br>
+  <h2 style="color: #38BDF8;">⚙️ Spesifikasi & Dukungan</h2>
 </div>
 
----
+<table align="center" width="100%" style="border-collapse: collapse; border: none;">
+  <tr>
+    <td width="50%" style="vertical-align: top; padding-right: 10px;">
+      <h4 style="color: #38BDF8;">Spesifikasi Sistem</h4>
+      <table width="100%" style="font-size: 14px;">
+        <tr><td><b>Minimal OS</b></td><td>Android 7.0 (Nougat)</td></tr>
+        <tr><td><b>Arsitektur</b></td><td>ARMv7 / ARM64</td></tr>
+        <tr><td><b>RAM</b></td><td>1 GB (Rekomendasi 2 GB)</td></tr>
+        <tr><td><b>Penyimpanan</b></td><td>50 MB Ruang Kosong</td></tr>
+        <tr><td><b>Input</b></td><td>Remote D-Pad / STB</td></tr>
+      </table>
+    </td>
+    <td width="50%" style="vertical-align: top; padding-left: 10px;">
+      <h4 style="color: #38BDF8;">Perangkat Didukung</h4>
+      <table width="100%" style="font-size: 14px;">
+        <tr><td>✅ <b>Android TV</b></td><td>Google TV, Skyworth, Xiaomi</td></tr>
+        <tr><td>✅ <b>STB / TV Box</b></td><td>B860H, dll.</td></tr>
+        <tr><td>✅ <b>HP / Tablet</b></td><td>Touchscreen (Swipe & Tap)</td></tr>
+        <tr><td>❌ <b>Android < 7.0</b></td><td>Tidak Didukung (API 24+)</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
+<br>
+
+<!-- Garis Pembatas -->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+<!-- SECTION: INSTALASI & CHANGELOG -->
 <div align="center">
-  <h2 style="color: #38BDF8;">📱 Perangkat yang Didukung</h2>
-</div>
-
-| Perangkat | Status Dukungan | Catatan |
-| :--- | :--- | :--- |
-| **Android TV (Google TV)** | ✅ Didukung Penuh | Navigasi D-Pad optimal, Remote Voice. |
-| **STB / TV Box (Android)** | ✅ Didukung Penuh | Diuji pada Skyworth, Xiaomi, B860H. |
-| **HP / Tablet (Touchscreen)** | ✅ Didukung | Menggunakan *swipe* dan *tap-to-center*. |
-| **Android < 7.0 (Nougat)** | ❌ Tidak Didukung | Membutuhkan API minimal 24. |
-
----
-
-<div align="center">
-  <h2 style="color: #38BDF8;">⚙️ Spesifikasi Sistem</h2>
-</div>
-
-| Komponen | Spesifikasi Minimal | Rekomendasi |
-| :--- | :--- | :--- |
-| **Sistem Operasi** | Android 7.0 (Nougat) | Android 10+ |
-| **Arsitektur** | ARMv7 / ARM64 | ARM64 (64-bit) |
-| **RAM** | 1 GB | 2 GB atau lebih |
-| **Penyimpanan** | 50 MB Ruang Kosong | 100 MB Ruang Kosong |
-| **Input** | Remote D-Pad / STB | Remote Voice / Bluetooth |
-
----
-
-<div align="center">
+  <br>
   <h2 style="color: #38BDF8;">🚀 Panduan Instalasi</h2>
 </div>
 
-1. Klik tombol **⬇️ DOWNLOAD HOME.iO TV APK** di bagian atas.
-2. Pilih file `.apk` terbaru dari daftar rilis, lalu unduh.
-3. Pindahkan file ke Flashdisk (jika mengunduh via PC) lalu colokkan ke TV. *(Jika TV mendukung browser, bisa langsung unduh dari TV).*
-4. Buka **File Manager** bawaan TV, cari file `.apk` tersebut, lalu klik.
-5. Jika muncul peringatan **"Unknown Sources"**, pilih **Setelan** lalu centang **Izinkan dari sumber ini**.
-6. Klik **Install** dan tunggu hingga proses selesai.
+1. Unduh file `.apk` menggunakan tombol di atas.
+2. Pindahkan ke Flashdisk (jika via PC), lalu colokkan ke TV.
+3. Buka **File Manager** TV, cari file `.apk`, lalu klik.
+4. Jika muncul peringatan, pilih **Setelan** -> centang **Izinkan dari sumber ini**.
+5. Klik **Install** dan tunggu hingga selesai.
 
-<div align="center">
-  <p><b>Scan QR Code ini dari HP untuk mengunduh langsung:</b></p>
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/andikune-ux/dev.andikune-apps/releases/latest" width="150" style="border-radius: 10px; border: 2px solid #38BDF8;" />
-</div>
-
----
+<br>
 
 <div align="center">
   <h2 style="color: #38BDF8;">📝 Changelog Terbaru</h2>
@@ -184,7 +171,7 @@ Video 4K   : [READY TO FALLBACK]
 - ⚡ **Sistem**: Implementasi *Multi-App OTA Update* via repo publik `dev.andikune-apps`.
 <!-- CHANGELOG_END -->
 
----
+<br>
 
 <div align="center">
   <h2 style="color: #38BDF8;">🗺️ Roadmap Pengembangan</h2>
@@ -197,28 +184,33 @@ Video 4K   : [READY TO FALLBACK]
 - [ ] **Voice Search** *(Coming Soon)*
 - [ ] **Integrasi Smart Home (IoT)** *(Coming Soon)*
 
----
+<br>
 
+<!-- Garis Pembatas -->
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%">
+
+<!-- SECTION: FAQ -->
 <div align="center">
+  <br>
   <h2 style="color: #38BDF8;">❓ FAQ (Pertanyaan Umum)</h2>
 </div>
 
 <details>
   <summary><b>Kenapa fitur Update tidak memunculkan pop-up?</b></summary>
   <br>
-  Pastikan TV kamu terhubung ke internet. Jika kamu baru saja mengunduh versi terbaru secara manual, pop-up tidak akan muncul karena versimu sudah yang paling baru. Aplikasi akan mengecek update secara berkala.
+  Pastikan TV terhubung ke internet. Jika baru mengunduh versi terbaru secara manual, pop-up tidak akan muncul. Aplikasi akan mengecek update secara berkala.
 </details>
 
 <details>
-  <summary><b>Video wallpaper saya layar hitam (blank), kenapa?</b></summary>
+  <summary><b>Video wallpaper layar hitam (blank), kenapa?</b></summary>
   <br>
-  Beberapa STB murah belum mendukung pemutaran video resolusi 4K (terutama format H.265/HEVC). HOME.iO TV sudah dilengkapi sistem <i>auto-fallback</i> ke video HD atau foto statis jika video utama gagal dimuat.
+  Beberapa STB murah belum mendukung video resolusi 4K (H.265/HEVC). HOME.iO TV sudah dilengkapi <i>auto-fallback</i> ke video HD atau foto statis.
 </details>
 
 <details>
   <summary><b>Apakah aplikasi ini berbayar?</b></summary>
   <br>
-  Tidak. Aplikasi ini dikembangkan secara mandiri dan didistribusikan secara gratis. Jika kamu merasa terbantu, kamu bisa mendukung pengembang melalui pop-up donasi QRIS yang muncul saat aplikasi dibuka.
+  Tidak. Aplikasi ini gratis. Dukungan pengembang bisa melalui pop-up donasi QRIS yang muncul saat aplikasi dibuka.
 </details>
 
 <details>
@@ -229,11 +221,18 @@ Video 4K   : [READY TO FALLBACK]
   <b>- Andi</b>
 </details>
 
----
+<br>
 
+<!-- Garis Pembatas -->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+<!-- SECTION: STATISTIK REPO -->
 <div align="center">
+  <br>
   <h2 style="color: #38BDF8;">📊 Statistik Repositori</h2>
   <p>Data khusus untuk repositori ini:</p>
+  
+  <br>
   
   <a href="https://github.com/andikune-ux/dev.andikune-apps/stargazers">
     <img src="https://img.shields.io/github/stars/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Stars">
@@ -244,30 +243,24 @@ Video 4K   : [READY TO FALLBACK]
   <a href="https://github.com/andikune-ux/dev.andikune-apps/issues">
     <img src="https://img.shields.io/github/issues/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Issues">
   </a>
-  <a href="https://github.com/andikune-ux/dev.andikune-apps/commits/main">
-    <img src="https://img.shields.io/github/last-commit/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Last Commit">
-  </a>
   
   <br><br>
   
   <img src="https://komarev.com/ghpvc/?username=andikune-ux&label=Total%20Pengunjung&color=38BDF8&style=flat-square" alt="Visitor Counter" />
 </div>
 
----
+<br>
 
-<!-- Garis Beranimasi Bawah -->
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+<!-- Garis Pembatas -->
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%">
 
-<!-- Animasi Neon Stickman Fight (Easter Egg) -->
+<!-- SECTION: SOSMED & STICKMAN -->
 <div align="center">
   <br>
-  <img src="https://media.tenor.com/2Y8fXW8z3XAAAAAj/stickman-fight.gif" width="150" alt="Neon Stickman Fight">
-  <p><i>Stickman jaga markas HOME.iO!</i></p>
-</div>
-
-<div align="center">
   <h2 style="color: #38BDF8;">🌐 Hubungi Kami</h2>
   <p>Punya saran fitur, laporan bug, atau ingin berdiskusi?</p>
+
+  <br>
 
   <a href="https://chat.whatsapp.com/BAejUrfRW39FOt8biJleUM">
     <img src="https://img.shields.io/badge/WhatsApp-Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
@@ -278,6 +271,12 @@ Video 4K   : [READY TO FALLBACK]
   <a href="https://www.instagram.com/nayyra.une">
     <img src="https://img.shields.io/badge/Instagram-@nayyra.une-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   </a>
+  
+  <br><br>
+  
+  <!-- Animasi Neon Stickman Fight -->
+  <img src="https://media.tenor.com/2Y8fXW8z3XAAAAAj/stickman-fight.gif" width="120" alt="Neon Stickman Fight">
+  <p><i>Stickman jaga markas HOME.iO!</i></p>
 </div>
 
 <br>
