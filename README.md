@@ -225,15 +225,31 @@
 <!-- Garis Pembatas -->
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-<!-- SECTION: STATISTIK REPO (KARTU PREMIUM) -->
+<!-- SECTION: STATISTIK REPO (KARTU REPO VALID) -->
 <div align="center">
   <br>
   <h2 style="color: #38BDF8;">📊 Statistik Repositori</h2>
-  <br>
-  
-  <img src="https://github-readme-stats.vercel.app/api?username=andikune-ux&show_icons=true&theme=dark&bg_color=0A0E1A&title_color=38BDF8&icon_color=38BDF8&text_color=ffffff&border_color=1E3A8A" alt="GitHub Stats" width="100%" />
+  <p>Data khusus untuk repositori <b>dev.andikune-apps</b>:</p>
   
   <br>
+  
+  <!-- Kartu Repo Spesifik -->
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=andikune-ux&repo=dev.andikune-apps&theme=dark&bg_color=0A0E1A&title_color=38BDF8&icon_color=38BDF8&text_color=ffffff&border_color=1E3A8A" alt="Repo Card" width="400" />
+
+  <br><br>
+  
+  <!-- Lencana Real-time Spesifik Repo -->
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/stargazers">
+    <img src="https://img.shields.io/github/stars/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Stars">
+  </a>
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/network/members">
+    <img src="https://img.shields.io/github/forks/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Forks">
+  </a>
+  <a href="https://github.com/andikune-ux/dev.andikune-apps/issues">
+    <img src="https://img.shields.io/github/issues/andikune-ux/dev.andikune-apps?style=for-the-badge&color=38BDF8&labelColor=0A0E1A&logo=github" alt="Issues">
+  </a>
+  
+  <br><br>
   
   <img src="https://komarev.com/ghpvc/?username=andikune-ux&label=Total%20Pengunjung&color=38BDF8&style=flat-square" alt="Visitor Counter" />
 </div>
