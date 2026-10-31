@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: main # <--- FIX: Paksa masuk ke branch main biar gak detached HEAD
+          fetch-depth: 0
 
       - name: Check Release Tag
         id: check
@@ -87,5 +90,5 @@ jobs:
             echo "ℹ️ Tidak ada perubahan pada README."
           else
             git commit -m "docs: auto-update changelog for ${{ steps.check.outputs.TAG }}"
-            git push
+            git push origin main # <--- FIX: Tegaskan push ke branch main
           fi
