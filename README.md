@@ -163,6 +163,17 @@
 </div>
 
 <!-- CHANGELOG_START -->
+### v.1.31.356 (31 October 2026)
+- Update TvSlider.kt
+- Update ScreensaverActivity.kt
+- Update ScreensaverActivity.kt
+- Update build.yml
+- Create cleanup-artifacts.yml
+- Update HomeScreen.kt
+- Update build.yml
+
+---
+
 ### v.1.31.355 (31 October 2026)
 - Update ScreensaverActivity.kt
 - Update ScreensaverActivity.kt
@@ -175,14 +186,6 @@
 
 ### v.1.31.354 (31 October 2026)
 - Update ScreensaverActivity.kt
-- Update build.yml
-- Create cleanup-artifacts.yml
-- Update HomeScreen.kt
-- Update build.yml
-
----
-
-### v.1.31.353 (31 October 2026)
 - Update build.yml
 - Create cleanup-artifacts.yml
 - Update HomeScreen.kt
