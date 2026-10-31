@@ -163,6 +163,14 @@
 </div>
 
 <!-- CHANGELOG_START -->
+### v.1.31.353 (31 October 2026)
+- Update build.yml
+- Create cleanup-artifacts.yml
+- Update HomeScreen.kt
+- Update build.yml
+
+---
+
 ### v1.25.348 (24 Oktober 2026)
 - 🛠️ **Perbaikan D-Pad**: Mengganti logika *Carousel* menjadi *Center-Locked* (Anti-Lag & Anti-Balik).
 - 🛠️ **Perbaikan Video**: Menambahkan sistem *Auto-Fallback* (Video 4K -> HD -> Gambar Statis).
