@@ -163,6 +163,16 @@
 </div>
 
 <!-- CHANGELOG_START -->
+### v.1.31.355 (31 October 2026)
+- Update ScreensaverActivity.kt
+- Update ScreensaverActivity.kt
+- Update build.yml
+- Create cleanup-artifacts.yml
+- Update HomeScreen.kt
+- Update build.yml
+
+---
+
 ### v.1.31.354 (31 October 2026)
 - Update ScreensaverActivity.kt
 - Update build.yml
@@ -177,14 +187,6 @@
 - Create cleanup-artifacts.yml
 - Update HomeScreen.kt
 - Update build.yml
-
----
-
-### v1.25.348 (24 Oktober 2026)
-- 🛠️ **Perbaikan D-Pad**: Mengganti logika *Carousel* menjadi *Center-Locked* (Anti-Lag & Anti-Balik).
-- 🛠️ **Perbaikan Video**: Menambahkan sistem *Auto-Fallback* (Video 4K -> HD -> Gambar Statis).
-- 🎨 **Tampilan**: Membersihkan 5 tombol shortcut yang tidak berguna di pojok kiri atas.
-- ⚡ **Sistem**: Implementasi *Multi-App OTA Update* via repo publik `dev.andikune-apps`.
 <!-- CHANGELOG_END -->
 
 <br>
