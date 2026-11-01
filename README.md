@@ -163,6 +163,37 @@
 </div>
 
 <!-- CHANGELOG_START -->
+### v.2.01.376 (01 November 2026)
+- Document fixes and feature updates in AppKnowledge
+- Implement permission analysis display in PermissionSection
+- Implement force stop option in app context menu
+- Implement kiosk mode confirmation dialog
+- Refactor settings screen layout for better scrolling
+- Implement real-time notification permission detection
+- Update MainActivity.kt
+- Update PermissionSection.kt
+- Add overlay permission handling to onboarding dialog
+- Add OVERLAY permission type and update settings method
+- Add PermissionSection composable for managing app permissions
+- Add Permissions category to SettingsScreen
+- Implement remote button handling for settings and inputs
+- Update AndroidManifest.xml
+- Update AppKnowledge.kt
+- Update OtaUpdate.kt
+- Update TvSlider.kt
+- Kuntul
+- Update SettingsScreen.kt
+- Update AutoFocusPane.kt
+- Update TvSlider.kt
+- Update ScreensaverActivity.kt
+- Update ScreensaverActivity.kt
+- Update build.yml
+- Create cleanup-artifacts.yml
+- Update HomeScreen.kt
+- Update build.yml
+
+---
+
 ### v.2.01.375 (01 November 2026)
 - Implement permission analysis display in PermissionSection
 - Implement force stop option in app context menu
@@ -195,34 +226,6 @@
 
 ### v.2.01.374 (01 November 2026)
 - Implement force stop option in app context menu
-- Implement kiosk mode confirmation dialog
-- Refactor settings screen layout for better scrolling
-- Implement real-time notification permission detection
-- Update MainActivity.kt
-- Update PermissionSection.kt
-- Add overlay permission handling to onboarding dialog
-- Add OVERLAY permission type and update settings method
-- Add PermissionSection composable for managing app permissions
-- Add Permissions category to SettingsScreen
-- Implement remote button handling for settings and inputs
-- Update AndroidManifest.xml
-- Update AppKnowledge.kt
-- Update OtaUpdate.kt
-- Update TvSlider.kt
-- Kuntul
-- Update SettingsScreen.kt
-- Update AutoFocusPane.kt
-- Update TvSlider.kt
-- Update ScreensaverActivity.kt
-- Update ScreensaverActivity.kt
-- Update build.yml
-- Create cleanup-artifacts.yml
-- Update HomeScreen.kt
-- Update build.yml
-
----
-
-### v.2.01.373 (01 November 2026)
 - Implement kiosk mode confirmation dialog
 - Refactor settings screen layout for better scrolling
 - Implement real-time notification permission detection
