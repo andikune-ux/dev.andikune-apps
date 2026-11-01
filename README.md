@@ -163,6 +163,24 @@
 </div>
 
 <!-- CHANGELOG_START -->
+### v.2.01.363 (01 November 2026)
+- Update AndroidManifest.xml
+- Update AppKnowledge.kt
+- Update OtaUpdate.kt
+- Update TvSlider.kt
+- Kuntul
+- Update SettingsScreen.kt
+- Update AutoFocusPane.kt
+- Update TvSlider.kt
+- Update ScreensaverActivity.kt
+- Update ScreensaverActivity.kt
+- Update build.yml
+- Create cleanup-artifacts.yml
+- Update HomeScreen.kt
+- Update build.yml
+
+---
+
 ### v.2.01.362 (01 November 2026)
 - Update AppKnowledge.kt
 - Update OtaUpdate.kt
@@ -182,21 +200,6 @@
 
 ### v.2.01.361 (01 November 2026)
 - Update OtaUpdate.kt
-- Update TvSlider.kt
-- Kuntul
-- Update SettingsScreen.kt
-- Update AutoFocusPane.kt
-- Update TvSlider.kt
-- Update ScreensaverActivity.kt
-- Update ScreensaverActivity.kt
-- Update build.yml
-- Create cleanup-artifacts.yml
-- Update HomeScreen.kt
-- Update build.yml
-
----
-
-### v.2.01.360 (01 November 2026)
 - Update TvSlider.kt
 - Kuntul
 - Update SettingsScreen.kt
