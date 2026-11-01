@@ -163,6 +163,62 @@
 </div>
 
 <!-- CHANGELOG_START -->
+### v.2.01.401 (01 November 2026)
+- Refactor HomeScreen with new gesture detection
+- Refactor SystemControlScreen for Wi-Fi and Bluetooth
+- Add device admin receiver configuration
+- Add HomeIoAdminReceiver for device admin features
+- Update AndroidManifest.xml with device admin permissions
+- Refactor dispatchKeyEvent for better key handling
+- Refactor back button logic and dev mode handling
+- Add context declaration in HomeScreen.kt
+- Clean up AppContextMenuDialog.kt by removing comments
+- Implement ManageFavoritesDialog and update state
+- Update DeveloperPinDialog to use Base64 for PIN
+- Fix hash calculation and improve comments in DeveloperPinDialog
+- Refactor DeveloperPinDialog layout and functionality
+- Implement developer mode bypass features
+- Add Help section and Dev Mode indicator to SettingsScreen
+- Add developer mode functionality and UI updates
+- Create HelpSection.kt
+- Add DeveloperPinDialog for PIN verification
+- Add DeveloperPrefs for managing developer mode
+- Implement automatic settings search and remote key handling
+- Enhance focus and scrolling in TermsAndConditionsDialog
+- Integrate Terms and Conditions dialog in MainActivity
+- Add Terms and Conditions dialog component
+- Add TermsPrefs object for terms agreement management
+- Refactor AI_PROMPT position and content
+- Document fixes and feature updates in AppKnowledge
+- Implement permission analysis display in PermissionSection
+- Implement force stop option in app context menu
+- Implement kiosk mode confirmation dialog
+- Refactor settings screen layout for better scrolling
+- Implement real-time notification permission detection
+- Update MainActivity.kt
+- Update PermissionSection.kt
+- Add overlay permission handling to onboarding dialog
+- Add OVERLAY permission type and update settings method
+- Add PermissionSection composable for managing app permissions
+- Add Permissions category to SettingsScreen
+- Implement remote button handling for settings and inputs
+- Update AndroidManifest.xml
+- Update AppKnowledge.kt
+- Update OtaUpdate.kt
+- Update TvSlider.kt
+- Kuntul
+- Update SettingsScreen.kt
+- Update AutoFocusPane.kt
+- Update TvSlider.kt
+- Update ScreensaverActivity.kt
+- Update ScreensaverActivity.kt
+- Update build.yml
+- Create cleanup-artifacts.yml
+- Update HomeScreen.kt
+- Update build.yml
+
+---
+
 ### v.2.01.400 (01 November 2026)
 - Refactor SystemControlScreen for Wi-Fi and Bluetooth
 - Add device admin receiver configuration
@@ -222,57 +278,6 @@
 - Add device admin receiver configuration
 - Add HomeIoAdminReceiver for device admin features
 - Update AndroidManifest.xml with device admin permissions
-- Refactor dispatchKeyEvent for better key handling
-- Refactor back button logic and dev mode handling
-- Add context declaration in HomeScreen.kt
-- Clean up AppContextMenuDialog.kt by removing comments
-- Implement ManageFavoritesDialog and update state
-- Update DeveloperPinDialog to use Base64 for PIN
-- Fix hash calculation and improve comments in DeveloperPinDialog
-- Refactor DeveloperPinDialog layout and functionality
-- Implement developer mode bypass features
-- Add Help section and Dev Mode indicator to SettingsScreen
-- Add developer mode functionality and UI updates
-- Create HelpSection.kt
-- Add DeveloperPinDialog for PIN verification
-- Add DeveloperPrefs for managing developer mode
-- Implement automatic settings search and remote key handling
-- Enhance focus and scrolling in TermsAndConditionsDialog
-- Integrate Terms and Conditions dialog in MainActivity
-- Add Terms and Conditions dialog component
-- Add TermsPrefs object for terms agreement management
-- Refactor AI_PROMPT position and content
-- Document fixes and feature updates in AppKnowledge
-- Implement permission analysis display in PermissionSection
-- Implement force stop option in app context menu
-- Implement kiosk mode confirmation dialog
-- Refactor settings screen layout for better scrolling
-- Implement real-time notification permission detection
-- Update MainActivity.kt
-- Update PermissionSection.kt
-- Add overlay permission handling to onboarding dialog
-- Add OVERLAY permission type and update settings method
-- Add PermissionSection composable for managing app permissions
-- Add Permissions category to SettingsScreen
-- Implement remote button handling for settings and inputs
-- Update AndroidManifest.xml
-- Update AppKnowledge.kt
-- Update OtaUpdate.kt
-- Update TvSlider.kt
-- Kuntul
-- Update SettingsScreen.kt
-- Update AutoFocusPane.kt
-- Update TvSlider.kt
-- Update ScreensaverActivity.kt
-- Update ScreensaverActivity.kt
-- Update build.yml
-- Create cleanup-artifacts.yml
-- Update HomeScreen.kt
-- Update build.yml
-
----
-
-### v.2.01.396 (01 November 2026)
 - Refactor dispatchKeyEvent for better key handling
 - Refactor back button logic and dev mode handling
 - Add context declaration in HomeScreen.kt
