@@ -163,6 +163,170 @@
 </div>
 
 <!-- CHANGELOG_START -->
+### v.2.10.509 (10 November 2026)
+- 🛠️ Perbaikan: close all apps grid with d-pad up on first row
+- 🛠️ Perbaikan: use tinted glass pane and contain d-pad focus
+- 🛠️ Perbaikan: improve left navigation panel text contrast
+- test(ntp): remove duplicate offset test with stale parameter names
+- test(ntp): cover four-timestamp NTP offset calculation
+- 🛠️ Perbaikan: remove duplicate offset helpers before validation
+- 🛠️ Perbaikan: expose and test round-trip offset calculations
+- 📦 Rutinitas: remove redundant history codec
+- 📦 Rutinitas: remove redundant history codec
+- test(ntp): cover four-timestamp NTP offset calculation
+- 🛠️ Perbaikan: harden server timestamps and testable offset math
+- 🛠️ Perbaikan: recheck schedule after manual status updates
+- 🛠️ Perbaikan: display five most recent history entries
+- test(ntp): verify retry and success scheduling intervals
+- 🛠️ Perbaikan: refresh history when background checks complete
+- test(ntp): cover bounded history persistence codec
+- test(ntp): verify round-trip midpoint offset calculation
+- 🛠️ Perbaikan: schedule retries based on previous check result
+- ✨ Fitur Baru: display recent time-check history in settings
+- ✨ Fitur Baru: persist last ten network time check results
+- 🛠️ Perbaikan: calculate accurate offset and retry failed checks sooner
+- 🛠️ Perbaikan: validate server replies and estimate offset by round-trip midpoint
+- ✨ Fitur Baru: persist last ten time-check results
+- ✨ Fitur Baru: add bounded history codec for time checks
+- 🛠️ Perbaikan: remove legacy mode from settings persistence
+- 🔧 Penyesuaian: normalize brightness consistently in TV settings
+- 🛠️ Perbaikan: remove final legacy brightness mode reference
+- test(display): cover manual brightness normalization
+- 🔧 Penyesuaian: centralize manual brightness normalization
+- 🛠️ Perbaikan: keep brightness manual-only and normalize values
+- 🛠️ Perbaikan: keep brightness manual-only and normalize values
+- 🛠️ Perbaikan: keep brightness manual-only and normalize values
+- 🛠️ Perbaikan: keep brightness manual-only and normalize values
+- 🛠️ Perbaikan: keep brightness manual-only and normalize values
+- 🛠️ Perbaikan: remove obsolete zero-brightness overlay branch
+- 🛠️ Perbaikan: enforce supported manual window brightness range
+- 🛠️ Perbaikan: clarify manual app-only brightness behavior
+- 🛠️ Perbaikan: normalize saved values to manual range
+- 🛠️ Perbaikan: keep manual control app-scoped and remove global writes
+- test(ota): reject nonstandard ports and URL credentials
+- security(ota): reject credentialed and nonstandard-port URLs
+- 🛠️ Perbaikan: retry automatic checks after network errors
+- 🛠️ Perbaikan: use scoped-storage-safe APK download fallback
+- 🛠️ Perbaikan: reject version components that overflow integer
+- test(ota): cover version comparison and trusted URLs
+- testability(ota): expose strict version and URL validation helpers
+- 🛠️ Perbaikan: recover invalid local keystore alias for PIN setup
+- test(security): validate local developer PIN format
+- security(pin): require a fresh local developer PIN
+- security(pin): replace public remote PIN with local enrollment
+- security(pin): store device-local HMAC verifier in Android Keystore
+- 🛠️ Perbaikan: handle missing custom video path safely
+- 🛠️ Perbaikan: clarify extension decoder preference label
+- 🛠️ Perbaikan: prefer saved photo when custom video fails
+- 🛠️ Perbaikan: copy selected USB media into app storage safely
+- 🛠️ Perbaikan: use SAF fallback and keep state updates on main
+- 🛠️ Perbaikan: reset video errors and use valid image fallback
+- 🛠️ Perbaikan: report actual grants and refresh on resume
+- test(kiosk): cover lock task eligibility
+- 🛠️ Perbaikan: show real lock task readiness in settings
+- 🛠️ Perbaikan: revert unsupported kiosk toggle safely
+- 🛠️ Perbaikan: require device owner or lock task allowlist
+- 🛠️ Perbaikan: import location query helper
+- test(weather): cover location query normalization
+- ✨ Fitur Baru: add city selection screen
+- ✨ Fitur Baru: add Open-Meteo geocoding client
+- ✨ Fitur Baru: add configurable weather location settings
+- ✨ Fitur Baru: add Open-Meteo city geocoding
+- 🛠️ Perbaikan: resolve configured city coordinates
+- 🛠️ Perbaikan: replace glass blur with lightweight transparency
+- 🛠️ Perbaikan: replace glass blur with lightweight transparency
+- 🛠️ Perbaikan: replace glass blur with lightweight transparency
+- 🛠️ Perbaikan: validate NTP response before accepting time
+- test(ntp): allow NTP fractional millisecond rounding
+- 🛠️ Perbaikan: schedule checks at remaining interval
+- test(ntp): cover NTP timestamp conversion
+- ✨ Fitur Baru: persist last time check history
+- ✨ Fitur Baru: implement NTP and HTTPS time checks
+- ⚙️ Sistem: cancel superseded builds to avoid duplicate releases
+- ✨ Fitur Baru: show sync status and manual check
+- ✨ Fitur Baru: run periodic network time checks
+- Fix TV brightness to manual slider only
+- Fix TV brightness to manual slider only
+- Fix TV brightness to manual slider only
+- 🛠️ Perbaikan: extract legacy signing key reliably
+- 🛠️ Perbaikan: correct legacy signing key extraction
+- 🛠️ Perbaikan: restore existing signing key when secrets are not configured
+- security: validate OTA redirects before following them
+- security: harden developer PIN verification and lockout
+- security: persist developer PIN lockout state
+- security: reject OTA downgrade and untrusted download URLs
+- security: require downloaded OTA APK version to match release
+- security: validate OTA release metadata and APK signer
+- security: remove workflow that commits signing keystore
+- security: restore signing key from GitHub Actions secrets
+- security: load app signing credentials from environment
+- ⚙️ Sistem: use installed Gradle 8.7 for test and APK jobs
+- ⚙️ Sistem: always run artifact cleanup after build and tests
+- ⚙️ Sistem: automatically retain only three newest artifacts
+- ⚙️ Sistem: run unit tests in parallel and retain three APK artifacts
+- build: align Gradle wrapper with Android Gradle Plugin
+- test: add DateTimeFormatter unit coverage
+- Delete public/assets/aistudio directory
+- Delete .aistudio/artifacts/brain/0ebb8ae1-68ba-4890-855c-877641ca3830 directory
+- Fix threading and error handling in video processing
+- Refactor HomeScreen for improved click handling
+- Refactor imports in HomeScreen.kt
+- Update HomeScreen.kt
+- Refactor HomeScreen with new gesture detection
+- Refactor SystemControlScreen for Wi-Fi and Bluetooth
+- Add device admin receiver configuration
+- Add HomeIoAdminReceiver for device admin features
+- Update AndroidManifest.xml with device admin permissions
+- Refactor dispatchKeyEvent for better key handling
+- Refactor back button logic and dev mode handling
+- Add context declaration in HomeScreen.kt
+- Clean up AppContextMenuDialog.kt by removing comments
+- Implement ManageFavoritesDialog and update state
+- Update DeveloperPinDialog to use Base64 for PIN
+- Fix hash calculation and improve comments in DeveloperPinDialog
+- Refactor DeveloperPinDialog layout and functionality
+- Implement developer mode bypass features
+- Add Help section and Dev Mode indicator to SettingsScreen
+- Add developer mode functionality and UI updates
+- Create HelpSection.kt
+- Add DeveloperPinDialog for PIN verification
+- Add DeveloperPrefs for managing developer mode
+- Implement automatic settings search and remote key handling
+- Enhance focus and scrolling in TermsAndConditionsDialog
+- Integrate Terms and Conditions dialog in MainActivity
+- Add Terms and Conditions dialog component
+- Add TermsPrefs object for terms agreement management
+- Refactor AI_PROMPT position and content
+- Document fixes and feature updates in AppKnowledge
+- Implement permission analysis display in PermissionSection
+- Implement force stop option in app context menu
+- Implement kiosk mode confirmation dialog
+- Refactor settings screen layout for better scrolling
+- Implement real-time notification permission detection
+- Update MainActivity.kt
+- Update PermissionSection.kt
+- Add overlay permission handling to onboarding dialog
+- Add OVERLAY permission type and update settings method
+- Add PermissionSection composable for managing app permissions
+- Add Permissions category to SettingsScreen
+- Implement remote button handling for settings and inputs
+- Update AndroidManifest.xml
+- Update AppKnowledge.kt
+- Update OtaUpdate.kt
+- Update TvSlider.kt
+- Kuntul
+- Update SettingsScreen.kt
+- Update AutoFocusPane.kt
+- Update TvSlider.kt
+- Update ScreensaverActivity.kt
+- Update ScreensaverActivity.kt
+- Update build.yml
+- Create cleanup-artifacts.yml
+- Update HomeScreen.kt
+- Update build.yml
+
+---
+
 ### v.2.10.508 (10 November 2026)
 - 🛠️ Perbaikan: use tinted glass pane and contain d-pad focus
 - 🛠️ Perbaikan: improve left navigation panel text contrast
@@ -328,167 +492,6 @@
 
 ### v.2.10.507 (10 November 2026)
 - 🛠️ Perbaikan: improve left navigation panel text contrast
-- test(ntp): remove duplicate offset test with stale parameter names
-- test(ntp): cover four-timestamp NTP offset calculation
-- 🛠️ Perbaikan: remove duplicate offset helpers before validation
-- 🛠️ Perbaikan: expose and test round-trip offset calculations
-- 📦 Rutinitas: remove redundant history codec
-- 📦 Rutinitas: remove redundant history codec
-- test(ntp): cover four-timestamp NTP offset calculation
-- 🛠️ Perbaikan: harden server timestamps and testable offset math
-- 🛠️ Perbaikan: recheck schedule after manual status updates
-- 🛠️ Perbaikan: display five most recent history entries
-- test(ntp): verify retry and success scheduling intervals
-- 🛠️ Perbaikan: refresh history when background checks complete
-- test(ntp): cover bounded history persistence codec
-- test(ntp): verify round-trip midpoint offset calculation
-- 🛠️ Perbaikan: schedule retries based on previous check result
-- ✨ Fitur Baru: display recent time-check history in settings
-- ✨ Fitur Baru: persist last ten network time check results
-- 🛠️ Perbaikan: calculate accurate offset and retry failed checks sooner
-- 🛠️ Perbaikan: validate server replies and estimate offset by round-trip midpoint
-- ✨ Fitur Baru: persist last ten time-check results
-- ✨ Fitur Baru: add bounded history codec for time checks
-- 🛠️ Perbaikan: remove legacy mode from settings persistence
-- 🔧 Penyesuaian: normalize brightness consistently in TV settings
-- 🛠️ Perbaikan: remove final legacy brightness mode reference
-- test(display): cover manual brightness normalization
-- 🔧 Penyesuaian: centralize manual brightness normalization
-- 🛠️ Perbaikan: keep brightness manual-only and normalize values
-- 🛠️ Perbaikan: keep brightness manual-only and normalize values
-- 🛠️ Perbaikan: keep brightness manual-only and normalize values
-- 🛠️ Perbaikan: keep brightness manual-only and normalize values
-- 🛠️ Perbaikan: keep brightness manual-only and normalize values
-- 🛠️ Perbaikan: remove obsolete zero-brightness overlay branch
-- 🛠️ Perbaikan: enforce supported manual window brightness range
-- 🛠️ Perbaikan: clarify manual app-only brightness behavior
-- 🛠️ Perbaikan: normalize saved values to manual range
-- 🛠️ Perbaikan: keep manual control app-scoped and remove global writes
-- test(ota): reject nonstandard ports and URL credentials
-- security(ota): reject credentialed and nonstandard-port URLs
-- 🛠️ Perbaikan: retry automatic checks after network errors
-- 🛠️ Perbaikan: use scoped-storage-safe APK download fallback
-- 🛠️ Perbaikan: reject version components that overflow integer
-- test(ota): cover version comparison and trusted URLs
-- testability(ota): expose strict version and URL validation helpers
-- 🛠️ Perbaikan: recover invalid local keystore alias for PIN setup
-- test(security): validate local developer PIN format
-- security(pin): require a fresh local developer PIN
-- security(pin): replace public remote PIN with local enrollment
-- security(pin): store device-local HMAC verifier in Android Keystore
-- 🛠️ Perbaikan: handle missing custom video path safely
-- 🛠️ Perbaikan: clarify extension decoder preference label
-- 🛠️ Perbaikan: prefer saved photo when custom video fails
-- 🛠️ Perbaikan: copy selected USB media into app storage safely
-- 🛠️ Perbaikan: use SAF fallback and keep state updates on main
-- 🛠️ Perbaikan: reset video errors and use valid image fallback
-- 🛠️ Perbaikan: report actual grants and refresh on resume
-- test(kiosk): cover lock task eligibility
-- 🛠️ Perbaikan: show real lock task readiness in settings
-- 🛠️ Perbaikan: revert unsupported kiosk toggle safely
-- 🛠️ Perbaikan: require device owner or lock task allowlist
-- 🛠️ Perbaikan: import location query helper
-- test(weather): cover location query normalization
-- ✨ Fitur Baru: add city selection screen
-- ✨ Fitur Baru: add Open-Meteo geocoding client
-- ✨ Fitur Baru: add configurable weather location settings
-- ✨ Fitur Baru: add Open-Meteo city geocoding
-- 🛠️ Perbaikan: resolve configured city coordinates
-- 🛠️ Perbaikan: replace glass blur with lightweight transparency
-- 🛠️ Perbaikan: replace glass blur with lightweight transparency
-- 🛠️ Perbaikan: replace glass blur with lightweight transparency
-- 🛠️ Perbaikan: validate NTP response before accepting time
-- test(ntp): allow NTP fractional millisecond rounding
-- 🛠️ Perbaikan: schedule checks at remaining interval
-- test(ntp): cover NTP timestamp conversion
-- ✨ Fitur Baru: persist last time check history
-- ✨ Fitur Baru: implement NTP and HTTPS time checks
-- ⚙️ Sistem: cancel superseded builds to avoid duplicate releases
-- ✨ Fitur Baru: show sync status and manual check
-- ✨ Fitur Baru: run periodic network time checks
-- Fix TV brightness to manual slider only
-- Fix TV brightness to manual slider only
-- Fix TV brightness to manual slider only
-- 🛠️ Perbaikan: extract legacy signing key reliably
-- 🛠️ Perbaikan: correct legacy signing key extraction
-- 🛠️ Perbaikan: restore existing signing key when secrets are not configured
-- security: validate OTA redirects before following them
-- security: harden developer PIN verification and lockout
-- security: persist developer PIN lockout state
-- security: reject OTA downgrade and untrusted download URLs
-- security: require downloaded OTA APK version to match release
-- security: validate OTA release metadata and APK signer
-- security: remove workflow that commits signing keystore
-- security: restore signing key from GitHub Actions secrets
-- security: load app signing credentials from environment
-- ⚙️ Sistem: use installed Gradle 8.7 for test and APK jobs
-- ⚙️ Sistem: always run artifact cleanup after build and tests
-- ⚙️ Sistem: automatically retain only three newest artifacts
-- ⚙️ Sistem: run unit tests in parallel and retain three APK artifacts
-- build: align Gradle wrapper with Android Gradle Plugin
-- test: add DateTimeFormatter unit coverage
-- Delete public/assets/aistudio directory
-- Delete .aistudio/artifacts/brain/0ebb8ae1-68ba-4890-855c-877641ca3830 directory
-- Fix threading and error handling in video processing
-- Refactor HomeScreen for improved click handling
-- Refactor imports in HomeScreen.kt
-- Update HomeScreen.kt
-- Refactor HomeScreen with new gesture detection
-- Refactor SystemControlScreen for Wi-Fi and Bluetooth
-- Add device admin receiver configuration
-- Add HomeIoAdminReceiver for device admin features
-- Update AndroidManifest.xml with device admin permissions
-- Refactor dispatchKeyEvent for better key handling
-- Refactor back button logic and dev mode handling
-- Add context declaration in HomeScreen.kt
-- Clean up AppContextMenuDialog.kt by removing comments
-- Implement ManageFavoritesDialog and update state
-- Update DeveloperPinDialog to use Base64 for PIN
-- Fix hash calculation and improve comments in DeveloperPinDialog
-- Refactor DeveloperPinDialog layout and functionality
-- Implement developer mode bypass features
-- Add Help section and Dev Mode indicator to SettingsScreen
-- Add developer mode functionality and UI updates
-- Create HelpSection.kt
-- Add DeveloperPinDialog for PIN verification
-- Add DeveloperPrefs for managing developer mode
-- Implement automatic settings search and remote key handling
-- Enhance focus and scrolling in TermsAndConditionsDialog
-- Integrate Terms and Conditions dialog in MainActivity
-- Add Terms and Conditions dialog component
-- Add TermsPrefs object for terms agreement management
-- Refactor AI_PROMPT position and content
-- Document fixes and feature updates in AppKnowledge
-- Implement permission analysis display in PermissionSection
-- Implement force stop option in app context menu
-- Implement kiosk mode confirmation dialog
-- Refactor settings screen layout for better scrolling
-- Implement real-time notification permission detection
-- Update MainActivity.kt
-- Update PermissionSection.kt
-- Add overlay permission handling to onboarding dialog
-- Add OVERLAY permission type and update settings method
-- Add PermissionSection composable for managing app permissions
-- Add Permissions category to SettingsScreen
-- Implement remote button handling for settings and inputs
-- Update AndroidManifest.xml
-- Update AppKnowledge.kt
-- Update OtaUpdate.kt
-- Update TvSlider.kt
-- Kuntul
-- Update SettingsScreen.kt
-- Update AutoFocusPane.kt
-- Update TvSlider.kt
-- Update ScreensaverActivity.kt
-- Update ScreensaverActivity.kt
-- Update build.yml
-- Create cleanup-artifacts.yml
-- Update HomeScreen.kt
-- Update build.yml
-
----
-
-### v.2.09.506 (09 November 2026)
 - test(ntp): remove duplicate offset test with stale parameter names
 - test(ntp): cover four-timestamp NTP offset calculation
 - 🛠️ Perbaikan: remove duplicate offset helpers before validation
