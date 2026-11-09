@@ -1,1 +1,2 @@
-MTQwMzk5
+# Deprecated: Developer PIN verification is now local to each device and backed by Android Keystore.
+# HOME.iO no longer downloads or reads a shared PIN from this file.
