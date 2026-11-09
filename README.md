@@ -163,6 +163,86 @@
 </div>
 
 <!-- CHANGELOG_START -->
+### v.2.09.425 (09 November 2026)
+- 🛠️ Perbaikan: extract legacy signing key reliably
+- 🛠️ Perbaikan: correct legacy signing key extraction
+- 🛠️ Perbaikan: restore existing signing key when secrets are not configured
+- security: validate OTA redirects before following them
+- security: harden developer PIN verification and lockout
+- security: persist developer PIN lockout state
+- security: reject OTA downgrade and untrusted download URLs
+- security: require downloaded OTA APK version to match release
+- security: validate OTA release metadata and APK signer
+- security: remove workflow that commits signing keystore
+- security: restore signing key from GitHub Actions secrets
+- security: load app signing credentials from environment
+- ⚙️ Sistem: use installed Gradle 8.7 for test and APK jobs
+- ⚙️ Sistem: always run artifact cleanup after build and tests
+- ⚙️ Sistem: automatically retain only three newest artifacts
+- ⚙️ Sistem: run unit tests in parallel and retain three APK artifacts
+- build: align Gradle wrapper with Android Gradle Plugin
+- test: add DateTimeFormatter unit coverage
+- Delete public/assets/aistudio directory
+- Delete .aistudio/artifacts/brain/0ebb8ae1-68ba-4890-855c-877641ca3830 directory
+- Fix threading and error handling in video processing
+- Refactor HomeScreen for improved click handling
+- Refactor imports in HomeScreen.kt
+- Update HomeScreen.kt
+- Refactor HomeScreen with new gesture detection
+- Refactor SystemControlScreen for Wi-Fi and Bluetooth
+- Add device admin receiver configuration
+- Add HomeIoAdminReceiver for device admin features
+- Update AndroidManifest.xml with device admin permissions
+- Refactor dispatchKeyEvent for better key handling
+- Refactor back button logic and dev mode handling
+- Add context declaration in HomeScreen.kt
+- Clean up AppContextMenuDialog.kt by removing comments
+- Implement ManageFavoritesDialog and update state
+- Update DeveloperPinDialog to use Base64 for PIN
+- Fix hash calculation and improve comments in DeveloperPinDialog
+- Refactor DeveloperPinDialog layout and functionality
+- Implement developer mode bypass features
+- Add Help section and Dev Mode indicator to SettingsScreen
+- Add developer mode functionality and UI updates
+- Create HelpSection.kt
+- Add DeveloperPinDialog for PIN verification
+- Add DeveloperPrefs for managing developer mode
+- Implement automatic settings search and remote key handling
+- Enhance focus and scrolling in TermsAndConditionsDialog
+- Integrate Terms and Conditions dialog in MainActivity
+- Add Terms and Conditions dialog component
+- Add TermsPrefs object for terms agreement management
+- Refactor AI_PROMPT position and content
+- Document fixes and feature updates in AppKnowledge
+- Implement permission analysis display in PermissionSection
+- Implement force stop option in app context menu
+- Implement kiosk mode confirmation dialog
+- Refactor settings screen layout for better scrolling
+- Implement real-time notification permission detection
+- Update MainActivity.kt
+- Update PermissionSection.kt
+- Add overlay permission handling to onboarding dialog
+- Add OVERLAY permission type and update settings method
+- Add PermissionSection composable for managing app permissions
+- Add Permissions category to SettingsScreen
+- Implement remote button handling for settings and inputs
+- Update AndroidManifest.xml
+- Update AppKnowledge.kt
+- Update OtaUpdate.kt
+- Update TvSlider.kt
+- Kuntul
+- Update SettingsScreen.kt
+- Update AutoFocusPane.kt
+- Update TvSlider.kt
+- Update ScreensaverActivity.kt
+- Update ScreensaverActivity.kt
+- Update build.yml
+- Create cleanup-artifacts.yml
+- Update HomeScreen.kt
+- Update build.yml
+
+---
+
 ### v.2.09.424 (09 November 2026)
 - 🛠️ Perbaikan: correct legacy signing key extraction
 - 🛠️ Perbaikan: restore existing signing key when secrets are not configured
@@ -244,74 +324,6 @@
 
 ### v.2.09.414 (09 November 2026)
 - security: load app signing credentials from environment
-- ⚙️ Sistem: use installed Gradle 8.7 for test and APK jobs
-- ⚙️ Sistem: always run artifact cleanup after build and tests
-- ⚙️ Sistem: automatically retain only three newest artifacts
-- ⚙️ Sistem: run unit tests in parallel and retain three APK artifacts
-- build: align Gradle wrapper with Android Gradle Plugin
-- test: add DateTimeFormatter unit coverage
-- Delete public/assets/aistudio directory
-- Delete .aistudio/artifacts/brain/0ebb8ae1-68ba-4890-855c-877641ca3830 directory
-- Fix threading and error handling in video processing
-- Refactor HomeScreen for improved click handling
-- Refactor imports in HomeScreen.kt
-- Update HomeScreen.kt
-- Refactor HomeScreen with new gesture detection
-- Refactor SystemControlScreen for Wi-Fi and Bluetooth
-- Add device admin receiver configuration
-- Add HomeIoAdminReceiver for device admin features
-- Update AndroidManifest.xml with device admin permissions
-- Refactor dispatchKeyEvent for better key handling
-- Refactor back button logic and dev mode handling
-- Add context declaration in HomeScreen.kt
-- Clean up AppContextMenuDialog.kt by removing comments
-- Implement ManageFavoritesDialog and update state
-- Update DeveloperPinDialog to use Base64 for PIN
-- Fix hash calculation and improve comments in DeveloperPinDialog
-- Refactor DeveloperPinDialog layout and functionality
-- Implement developer mode bypass features
-- Add Help section and Dev Mode indicator to SettingsScreen
-- Add developer mode functionality and UI updates
-- Create HelpSection.kt
-- Add DeveloperPinDialog for PIN verification
-- Add DeveloperPrefs for managing developer mode
-- Implement automatic settings search and remote key handling
-- Enhance focus and scrolling in TermsAndConditionsDialog
-- Integrate Terms and Conditions dialog in MainActivity
-- Add Terms and Conditions dialog component
-- Add TermsPrefs object for terms agreement management
-- Refactor AI_PROMPT position and content
-- Document fixes and feature updates in AppKnowledge
-- Implement permission analysis display in PermissionSection
-- Implement force stop option in app context menu
-- Implement kiosk mode confirmation dialog
-- Refactor settings screen layout for better scrolling
-- Implement real-time notification permission detection
-- Update MainActivity.kt
-- Update PermissionSection.kt
-- Add overlay permission handling to onboarding dialog
-- Add OVERLAY permission type and update settings method
-- Add PermissionSection composable for managing app permissions
-- Add Permissions category to SettingsScreen
-- Implement remote button handling for settings and inputs
-- Update AndroidManifest.xml
-- Update AppKnowledge.kt
-- Update OtaUpdate.kt
-- Update TvSlider.kt
-- Kuntul
-- Update SettingsScreen.kt
-- Update AutoFocusPane.kt
-- Update TvSlider.kt
-- Update ScreensaverActivity.kt
-- Update ScreensaverActivity.kt
-- Update build.yml
-- Create cleanup-artifacts.yml
-- Update HomeScreen.kt
-- Update build.yml
-
----
-
-### v.2.09.413 (09 November 2026)
 - ⚙️ Sistem: use installed Gradle 8.7 for test and APK jobs
 - ⚙️ Sistem: always run artifact cleanup after build and tests
 - ⚙️ Sistem: automatically retain only three newest artifacts
