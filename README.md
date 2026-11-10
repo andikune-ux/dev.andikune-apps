@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:050816,35:0B1B35,70:123B67,100:087E8B&text=HOME.iO&fontSize=86&fontColor=EAFBFF&fontAlignY=38&desc=ANDROID%20TV%20LAUNCHER%20%E2%80%A2%20SMART%20%E2%80%A2%20CLEAN%20%E2%80%A2%20FAST&descSize=15&descAlignY=59&animation=twinkling" width="100%" alt="HOME.iO animated header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:050816,35:0B1B35,70:123B67,100:087E8B&text=HOME.iO%20TV%20%2B%20LITE&fontSize=66&fontColor=EAFBFF&fontAlignY=38&desc=TWO%20EDITIONS%20%E2%80%A2%20HOME.iO%20TV%20%2B%20HOME.iO%20LITE&descSize=15&descAlignY=59&animation=twinkling" width="100%" alt="HOME.iO TV and HOME.iO Lite animated header" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=17&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&repeat=true&width=720&height=55&lines=Your+TV.+Your+Home.+Your+Control.;Designed+for+remote-first+navigation.;Two+editions.+One+HOME.iO+experience." alt="Animated HOME.iO tagline" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=17&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&repeat=true&width=720&height=55&lines=Your+TV.+Your+Home.+Your+Control.;Designed+for+remote-first+navigation.;Two+editions.+One+HOME.iO+experience." alt="Animated HOME.iO TV and HOME.iO Lite tagline" />
 
 <br/>
 
@@ -24,7 +24,7 @@
 
 ## A better home screen for your TV.
 
-**HOME.iO** mengubah pengalaman Android TV, TV Box, dan STB dengan launcher yang modern, responsif, dan dirancang agar nyaman dikendalikan menggunakan remote.
+**HOME.iO TV** dan **HOME.iO Lite** menghadirkan pengalaman Android TV, TV Box, dan STB dengan launcher yang modern, responsif, dan dirancang agar nyaman dikendalikan menggunakan remote.
 
 Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, serta pembaruan aplikasi dalam satu tempat.
 
