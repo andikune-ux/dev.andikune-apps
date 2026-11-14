@@ -43,7 +43,7 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 | Package ID | `dev.andikune.homeio` | `dev.andikune.homeio.lite` |
 | File APK | `HOME.iO-TV.apk` | `HOME.iO-TV-Lite.apk` |
 | Saluran update | Main release | Lite release terpisah |
-| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.736) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.14.31) |
+| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.738) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.14.31) |
 
 </div>
 
@@ -69,11 +69,11 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 
 ### HOME.iO TV — Edisi utama
 
-<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.736">
+<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.738">
 <img src="https://img.shields.io/badge/DOWNLOAD_HOME.iO_TV-APK-38BDF8?style=for-the-badge&logo=android&logoColor=07111F&labelColor=07111F" alt="Download HOME.iO TV APK" />
 </a>
 
-<sub>Versi rilis: <b>2.14.736</b> · Minimum Android 7.0</sub>
+<sub>Versi rilis: <b>2.14.738</b> · Minimum Android 7.0</sub>
 
 <br/><br/>
 
@@ -117,15 +117,23 @@ Kompatibilitas akhir tetap bergantung pada ABI, firmware vendor, fitur Android y
 ## 📝 Rilis terbaru
 
 <details open>
-<summary><b>HOME.iO TV — v2.14.736</b> · 14 November 2026</summary>
+<summary><b>HOME.iO TV — v2.14.738</b> · 14 November 2026</summary>
 
-- Perbaikan navigasi remote, fokus D-Pad, dan kontrol slider screensaver.
-- Perbaikan tombol Settings pada remote dan akses pengaturan sistem Android TV.
-- Peningkatan kestabilan wallpaper video, onboarding, dan pengaturan.
-- Penguatan keamanan OTA: validasi APK, versi, signature, lokasi file, dan proses instalasi.
-- Perbaikan pemulihan download OTA serta validasi kompatibilitas pembaruan.
+- 🧪 Test strict OTA release channel filtering
+- 🐛 Isolate HOME.iO OTA release channel
+- 🧹 Rapikan fallback openSystemSettings
+- 🐛 Fix release guard output newline
+- 🐛 Correct TV release guard parsing
+- 🚦 Keep TV builds running and guard release order
+- 🎛️ Tombol MENU remote membuka Settings (KEYCODE_SETTINGS ditelan firmware)
+- 🐛 Fix TvSlider native D-pad keycode compilation
+- ⏱️ Fix screensaver timeout one-minute D-pad increments
+- 🎮 Restore TV slider D-pad key event routing
+- 🎮 Fix D-pad controls for screensaver idle timeout slider
+- 🐛 Fix D-pad focus handoff into left navigation pane
+- ... dan perbaikan lainnya.
 
-[Lihat detail changelog HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.736)
+[Lihat detail rilis HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.738)
 
 </details>
 
