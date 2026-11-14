@@ -43,7 +43,7 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 | Package ID | `dev.andikune.homeio` | `dev.andikune.homeio.lite` |
 | File APK | `HOME.iO-TV.apk` | `HOME.iO-TV-Lite.apk` |
 | Saluran update | Main release | Lite release terpisah |
-| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.738) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.14.34) |
+| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.738) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.14.35) |
 
 </div>
 
@@ -79,11 +79,11 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 
 ### HOME.iO Lite — Android 6+
 
-<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.14.34">
+<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.14.35">
 <img src="https://img.shields.io/badge/DOWNLOAD_HOME.iO_LITE-APK-2DD4BF?style=for-the-badge&logo=android&logoColor=07111F&labelColor=07111F" alt="Download HOME.iO Lite APK" />
 </a>
 
-<sub>Versi rilis: <b>2.14.34</b> · Minimum Android 6.0</sub>
+<sub>Versi rilis: <b>2.14.35</b> · Minimum Android 6.0</sub>
 
 <br/><br/>
 
@@ -138,12 +138,12 @@ Kompatibilitas akhir tetap bergantung pada ABI, firmware vendor, fitur Android y
 </details>
 
 <details>
-<summary><b>HOME.iO Lite — v2.14.34</b> · 14 November 2026</summary>
+<summary><b>HOME.iO Lite — v2.14.35</b> · 14 November 2026</summary>
 
 HOME.iO Lite — Android 6.0 (API 23) and newer.
 This release channel is separate from HOME.iO TV.
 
-[Lihat detail rilis HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.14.34)
+[Lihat detail rilis HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.14.35)
 
 </details>
 
