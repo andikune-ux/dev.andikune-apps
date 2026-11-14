@@ -93,6 +93,18 @@ jobs:
           if not body:
               body = "- Tidak ada rincian pembaruan."
 
+          # Keep the repository landing page concise; the full notes remain on
+          # the individual GitHub Release page linked below.
+          body_lines = [
+              line.strip()
+              for line in body.splitlines()
+              if line.strip()
+              and not line.strip().lower().startswith("**full changelog**")
+          ]
+          if len(body_lines) > 12:
+              body_lines = body_lines[:12] + ["- ... dan perbaikan lainnya."]
+          body = "\\n".join(body_lines)
+
           with open("README.md", "r", encoding="utf-8") as file:
               readme = file.read()
 
