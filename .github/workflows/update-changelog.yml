@@ -7,6 +7,11 @@ on:
 permissions:
   contents: write
 
+# Keep README updates ordered when TV and Lite releases are published close together.
+concurrency:
+  group: release-readme-changelog
+  cancel-in-progress: false
+
 jobs:
   update-changelog:
     runs-on: ubuntu-latest
@@ -14,81 +19,171 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          ref: main # <--- FIX: Paksa masuk ke branch main biar gak detached HEAD
+          ref: main
           fetch-depth: 0
 
       - name: Check Release Tag
         id: check
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
         run: |
-          TAG="${{ github.event.release.tag_name }}"
-          if [[ "$TAG" =~ ^homeio- ]]; then
-            echo "PROCEED=true" >> $GITHUB_OUTPUT
-            echo "TAG=$TAG" >> $GITHUB_OUTPUT
-            echo "DATE=$(TZ='Asia/Jakarta' date +'%d %B %Y')" >> $GITHUB_OUTPUT
+          set -euo pipefail
+          TAG="$RELEASE_TAG"
+          if [[ "$TAG" =~ ^homeio-(lite-)?v\.[0-9]+(\.[0-9]+)+$ ]]; then
+            echo "PROCEED=true" >> "$GITHUB_OUTPUT"
+            echo "TAG=$TAG" >> "$GITHUB_OUTPUT"
           else
-            echo "PROCEED=false" >> $GITHUB_OUTPUT
-            echo "Bukan rilis HOME.iO, skip."
+            echo "PROCEED=false" >> "$GITHUB_OUTPUT"
+            echo "Release tag is not a supported HOME.iO channel; skipping."
           fi
 
-      - name: Update Changelog in README
+      - name: Update release links and changelog in README
         if: steps.check.outputs.PROCEED == 'true'
         env:
           TAG: ${{ steps.check.outputs.TAG }}
-          DATE: ${{ steps.check.outputs.DATE }}
           BODY: ${{ github.event.release.body }}
+          PUBLISHED_AT: ${{ github.event.release.published_at }}
         run: |
-          python3 << 'PYEOF'
-          import os, re, sys
-          
-          tag = os.environ['TAG']
-          date = os.environ['DATE']
-          body = os.environ.get('BODY', '').strip() or '- Tidak ada rincian pembaruan.'
-          
-          # Bersihkan heading "Rincian Pembaruan" dari body agar tidak dobel
-          body = re.sub(r'^#+\s*Rincian Pembaruan\s*\n+', '', body, flags=re.MULTILINE).strip()
-          
-          version_clean = tag.replace('homeio-', '')
-          new_entry = f"### {version_clean} ({date})\n{body}"
-          
-          with open('README.md', 'r', encoding='utf-8') as f:
-              readme = f.read()
-          
-          pattern = r'(<!-- CHANGELOG_START -->)(.*?)(<!-- CHANGELOG_END -->)'
-          match = re.search(pattern, readme, re.DOTALL)
-          
-          if not match:
-              print("❌ Marker <!-- CHANGELOG_START --> & <!-- CHANGELOG_END --> tidak ditemukan di README.md")
-              sys.exit(1)
-          
-          old_content = match.group(2).strip()
-          
-          # Parse existing entries (pisah dengan '---')
-          existing_entries = []
-          if old_content:
-              existing_entries = [e.strip() for e in old_content.split('\n\n---\n\n') if e.strip()]
-          
-          # Prepend new entry, batasi maksimal 3 versi terakhir
-          all_entries = [new_entry] + existing_entries
-          combined = '\n\n---\n\n'.join(all_entries[:3])
-          
-          # Rebuild README
-          new_readme = readme[:match.start(2)] + f"\n{combined}\n" + readme[match.end(2):]
-          
-          with open('README.md', 'w', encoding='utf-8') as f:
-              f.write(new_readme)
-          
-          print(f"✅ Changelog berhasil diperbarui untuk versi {version_clean}")
+          python3 <<'PYEOF'
+          import os
+          import re
+          import sys
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          tag = os.environ["TAG"].strip()
+          body = (os.environ.get("BODY") or "").strip()
+          published_at = os.environ.get("PUBLISHED_AT", "").strip()
+
+          if tag.startswith("homeio-lite-v."):
+              edition = "Lite"
+              prefix = "homeio-lite-v."
+              min_android = "Android 6.0"
+              details_open = ""
+          elif tag.startswith("homeio-v."):
+              edition = "TV"
+              prefix = "homeio-v."
+              min_android = "Android 7.0"
+              details_open = " open"
+          else:
+              sys.exit(f"Unsupported release channel: {tag}")
+
+          version = tag[len(prefix):]
+          if not re.fullmatch(r"\d+(\.\d+)+", version):
+              sys.exit(f"Invalid version in release tag: {tag}")
+
+          def version_tuple(value):
+              try:
+                  return tuple(int(part) for part in value.split("."))
+              except ValueError:
+                  return ()
+
+          if published_at:
+              published = datetime.fromisoformat(published_at.replace("Z", "+00:00"))
+              release_date = published.astimezone(ZoneInfo("Asia/Jakarta")).strftime("%d %B %Y")
+          else:
+              release_date = datetime.now(ZoneInfo("Asia/Jakarta")).strftime("%d %B %Y")
+
+          body = re.sub(
+              r"^#+\s*(Rincian Pembaruan|Release Notes|Changelog)\s*\n+",
+              "",
+              body,
+              flags=re.IGNORECASE | re.MULTILINE,
+          ).strip()
+          if not body:
+              body = "- Tidak ada rincian pembaruan."
+
+          with open("README.md", "r", encoding="utf-8") as file:
+              readme = file.read()
+
+          # Do not let an older release event downgrade the public download links.
+          version_pattern = (
+              r"<sub>Versi rilis: <b>([^<]+)</b> · Minimum Android "
+              + re.escape("6.0" if edition == "Lite" else "7.0")
+              + r"</sub>"
+          )
+          current_match = re.search(version_pattern, readme)
+          current_version = current_match.group(1) if current_match else ""
+          if current_version and version_tuple(current_version) > version_tuple(version):
+              print(
+                  f"Skipping stale {edition} release {version}; "
+                  f"README already advertises {current_version}."
+              )
+              sys.exit(0)
+
+          # Update every public download/changelog URL for this edition only.
+          tag_pattern = r"homeio-lite-v\.[0-9]+(?:\.[0-9]+)+" if edition == "Lite" else r"homeio-v\.[0-9]+(?:\.[0-9]+)+"
+          readme = re.sub(tag_pattern, tag, readme)
+
+          # Keep the edition's visible version label in sync with its release tag.
+          readme = re.sub(
+              version_pattern,
+              f"<sub>Versi rilis: <b>{version}</b> · Minimum Android "
+              + ("6.0" if edition == "Lite" else "7.0")
+              + "</sub>",
+              readme,
+              count=1,
+          )
+
+          title = f"HOME.iO {edition}"
+          details_pattern = (
+              r"<details(?: open)?>\s*<summary><b>"
+              + re.escape(title)
+              + r" — v.*?</details>"
+          )
+          new_details = (
+              f"<details{details_open}>\n"
+              f"<summary><b>{title} — v{version}</b> · {release_date}</summary>\n\n"
+              f"{body}\n\n"
+              f"[Lihat detail rilis HOME.iO {edition}]"
+              f"(https://github.com/andikune-ux/dev.andikune-apps/releases/tag/{tag})\n\n"
+              f"</details>"
+          )
+
+          if re.search(details_pattern, readme, flags=re.DOTALL):
+              readme = re.sub(
+                  details_pattern,
+                  lambda _: new_details,
+                  readme,
+                  count=1,
+                  flags=re.DOTALL,
+              )
+          else:
+              section = "## 📝 Rilis terbaru"
+              if section not in readme:
+                  readme = readme.rstrip() + "\n\n" + section + "\n"
+              readme = readme.replace(section, section + "\n\n" + new_details, 1)
+
+          with open("README.md", "w", encoding="utf-8") as file:
+              file.write(readme)
+
+          print(f"Updated HOME.iO {edition} README links and changelog to {version}.")
           PYEOF
 
       - name: Commit and Push
         if: steps.check.outputs.PROCEED == 'true'
+        env:
+          TAG: ${{ steps.check.outputs.TAG }}
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          if git diff --staged --quiet; then
-            echo "ℹ️ Tidak ada perubahan pada README."
-          else
-            git commit -m "docs: auto-update changelog for ${{ steps.check.outputs.TAG }}"
-            git push origin main # <--- FIX: Tegaskan push ke branch main
+          if git diff --cached --quiet; then
+            echo "No README changes are needed."
+            exit 0
           fi
+          git commit -m "📝 Sync README changelog for $TAG"
+
+          # A TV and Lite release may finish together. Rebase and retry if
+          # the other workflow updates main first.
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; rebasing on latest main."
+            git pull --rebase origin main
+            sleep "$attempt"
+          done
+          echo "::error::Could not push README changelog after 5 attempts."
+          exit 1
