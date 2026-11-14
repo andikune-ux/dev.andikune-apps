@@ -135,7 +135,7 @@ jobs:
           ]
           if len(body_lines) > 12:
               body_lines = body_lines[:12] + ["- ... dan perbaikan lainnya."]
-          body = "\\n".join(body_lines)
+          body = "\n".join(body_lines)
 
           with open("README.md", "r", encoding="utf-8") as file:
               readme = file.read()
