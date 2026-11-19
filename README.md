@@ -43,7 +43,7 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 | Package ID | `dev.andikune.homeio` | `dev.andikune.homeio.lite` |
 | File APK | `HOME.iO-TV.apk` | `HOME.iO-TV-Lite.apk` |
 | Saluran update | Main release | Lite release terpisah |
-| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.742) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.19.38) |
+| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.19.745) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.19.38) |
 
 </div>
 
@@ -69,11 +69,11 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 
 ### HOME.iO TV — Edisi utama
 
-<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.742">
+<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.19.745">
 <img src="https://img.shields.io/badge/DOWNLOAD_HOME.iO_TV-APK-38BDF8?style=for-the-badge&logo=android&logoColor=07111F&labelColor=07111F" alt="Download HOME.iO TV APK" />
 </a>
 
-<sub>Versi rilis: <b>2.14.742</b> · Minimum Android 7.0</sub>
+<sub>Versi rilis: <b>2.19.745</b> · Minimum Android 7.0</sub>
 
 <br/><br/>
 
@@ -117,23 +117,11 @@ Kompatibilitas akhir tetap bergantung pada ABI, firmware vendor, fitur Android y
 ## 📝 Rilis terbaru
 
 <details open>
-<summary><b>HOME.iO TV — v2.14.742</b> · 14 November 2026</summary>
+<summary><b>HOME.iO TV — v2.19.745</b> · 19 November 2026</summary>
 
-- 🎨 Show latest version as success instead of error
-- 🔄 Sync TV source and public OTA releases
-- 🧪 Test strict OTA release channel filtering
-- 🐛 Isolate HOME.iO OTA release channel
-- 🧹 Rapikan fallback openSystemSettings
-- 🐛 Fix release guard output newline
-- 🐛 Correct TV release guard parsing
-- 🚦 Keep TV builds running and guard release order
-- 🎛️ Tombol MENU remote membuka Settings (KEYCODE_SETTINGS ditelan firmware)
-- 🐛 Fix TvSlider native D-pad keycode compilation
-- ⏱️ Fix screensaver timeout one-minute D-pad increments
-- 🎮 Restore TV slider D-pad key event routing
-- ... dan perbaikan lainnya.
+- Add compact app sizing control for Home and Lite
 
-[Lihat detail rilis HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.14.742)
+[Lihat detail rilis HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.19.745)
 
 </details>
 
