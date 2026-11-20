@@ -43,7 +43,7 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 | Package ID | `dev.andikune.homeio` | `dev.andikune.homeio.lite` |
 | File APK | `HOME.iO-TV.apk` | `HOME.iO-TV-Lite.apk` |
 | Saluran update | Main release | Lite release terpisah |
-| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.20.780) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.20.46) |
+| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.20.784) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.20.46) |
 
 </div>
 
@@ -69,11 +69,11 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 
 ### HOME.iO TV — Edisi utama
 
-<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.20.780">
+<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.20.784">
 <img src="https://img.shields.io/badge/DOWNLOAD_HOME.iO_TV-APK-38BDF8?style=for-the-badge&logo=android&logoColor=07111F&labelColor=07111F" alt="Download HOME.iO TV APK" />
 </a>
 
-<sub>Versi rilis: <b>2.20.780</b> · Minimum Android 7.0</sub>
+<sub>Versi rilis: <b>2.20.784</b> · Minimum Android 7.0</sub>
 
 <br/><br/>
 
@@ -117,12 +117,14 @@ Kompatibilitas akhir tetap bergantung pada ABI, firmware vendor, fitur Android y
 ## 📝 Rilis terbaru
 
 <details open>
-<summary><b>HOME.iO TV — v2.20.780</b> · 20 November 2026</summary>
+<summary><b>HOME.iO TV — v2.20.784</b> · 20 November 2026</summary>
 
-- Read local wallpaper files without FileProvider
-- Fix wallpaper file manager URI authority mismatch
+- Fix Media3 video texture output API usage
+- Fix blank video wallpaper rendering on Android TV
+- Prevent blank custom wallpaper and add image fallback
+- 🛠️ Perbaikan: restore device admin receiver for uninstall protection
 
-[Lihat detail rilis HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.20.780)
+[Lihat detail rilis HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.20.784)
 
 </details>
 
