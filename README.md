@@ -43,7 +43,7 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 | Package ID | `dev.andikune.homeio` | `dev.andikune.homeio.lite` |
 | File APK | `HOME.iO-TV.apk` | `HOME.iO-TV-Lite.apk` |
 | Saluran update | Main release | Lite release terpisah |
-| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.22.834) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.22.52) |
+| Download | [Unduh HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.22.835) | [Unduh HOME.iO Lite](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-lite-v.2.22.52) |
 
 </div>
 
@@ -69,11 +69,11 @@ Navigasi D-Pad yang terarah, tampilan adaptif, kontrol perangkat, wallpaper, ser
 
 ### HOME.iO TV — Edisi utama
 
-<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.22.834">
+<a href="https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.22.835">
 <img src="https://img.shields.io/badge/DOWNLOAD_HOME.iO_TV-APK-38BDF8?style=for-the-badge&logo=android&logoColor=07111F&labelColor=07111F" alt="Download HOME.iO TV APK" />
 </a>
 
-<sub>Versi rilis: <b>2.22.834</b> · Minimum Android 7.0</sub>
+<sub>Versi rilis: <b>2.22.835</b> · Minimum Android 7.0</sub>
 
 <br/><br/>
 
@@ -117,12 +117,11 @@ Kompatibilitas akhir tetap bergantung pada ABI, firmware vendor, fitur Android y
 ## 📝 Rilis terbaru
 
 <details open>
-<summary><b>HOME.iO TV — v2.22.834</b> · 22 November 2026</summary>
+<summary><b>HOME.iO TV — v2.22.835</b> · 22 November 2026</summary>
 
-- Wire distinct HOME.iO navigation and back sounds
-- Replace default beep with HOME.iO soft digital sound set
+- Tidak ada rincian pembaruan.
 
-[Lihat detail rilis HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.22.834)
+[Lihat detail rilis HOME.iO TV](https://github.com/andikune-ux/dev.andikune-apps/releases/tag/homeio-v.2.22.835)
 
 </details>
 
